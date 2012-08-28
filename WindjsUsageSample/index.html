@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script type="text/javascript" src="wind-all-0.7.1.js"></script>
+        <script type="text/javascript" src="zepto.js"></script>
+    </head>
+    <body>
+        <br /><br />
+        <div id="message"></div>
+        <input id="trigger" type="submit" value="调用iOS native端设置我的名字" onclick=""/>
+
+        <script type="text/javascript">
+            // 通知iphone web view加载url对应的资源
+            function loadURL(url) {
+                var iFrame;
+                iFrame= document.createElement("iframe");
+                iFrame.setAttribute("src", url);
+                iFrame.setAttribute("style", "display:none;");
+                iFrame.setAttribute("height", "0px");
+                iFrame.setAttribute("width", "0px");
+                iFrame.setAttribute("frameborder", "0");
+                document.body.appendChild(iFrame);
+                iFrame.parentNode.removeChild(iFrame);
+                iFrame = null;
+            }
+            $('#trigger').click(function() {
+                loadURL("windjs://setNmae");
+            });
+        </script>
+    </body>
+</html>

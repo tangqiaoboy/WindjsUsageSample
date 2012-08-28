@@ -15,6 +15,9 @@
 		453CA09A15ECFBA700703737 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 453CA09915ECFBA700703737 /* AppDelegate.m */; };
 		453CA09D15ECFBA700703737 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 453CA09C15ECFBA700703737 /* ViewController.m */; };
 		453CA0A015ECFBA700703737 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 453CA09E15ECFBA700703737 /* ViewController.xib */; };
+		453CA0A715ECFBDF00703737 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 453CA0A615ECFBDF00703737 /* index.html */; };
+		453CA0B015ED017000703737 /* wind-all-0.7.1.js in Resources */ = {isa = PBXBuildFile; fileRef = 453CA0AC15ECFC1600703737 /* wind-all-0.7.1.js */; };
+		453CA0B115ED017000703737 /* zepto.js in Resources */ = {isa = PBXBuildFile; fileRef = 453CA0AE15ECFC4300703737 /* zepto.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,9 @@
 		453CA09B15ECFBA700703737 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		453CA09C15ECFBA700703737 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		453CA09F15ECFBA700703737 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		453CA0A615ECFBDF00703737 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
+		453CA0AC15ECFC1600703737 /* wind-all-0.7.1.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "wind-all-0.7.1.js"; sourceTree = "<group>"; };
+		453CA0AE15ECFC4300703737 /* zepto.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = zepto.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +89,9 @@
 				453CA09C15ECFBA700703737 /* ViewController.m */,
 				453CA09E15ECFBA700703737 /* ViewController.xib */,
 				453CA09015ECFBA700703737 /* Supporting Files */,
+				453CA0A615ECFBDF00703737 /* index.html */,
+				453CA0AC15ECFC1600703737 /* wind-all-0.7.1.js */,
+				453CA0AE15ECFC4300703737 /* zepto.js */,
 			);
 			path = WindjsUsageSample;
 			sourceTree = "<group>";
@@ -149,8 +158,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				453CA0B015ED017000703737 /* wind-all-0.7.1.js in Resources */,
+				453CA0B115ED017000703737 /* zepto.js in Resources */,
 				453CA09415ECFBA700703737 /* InfoPlist.strings in Resources */,
 				453CA0A015ECFBA700703737 /* ViewController.xib in Resources */,
+				453CA0A715ECFBDF00703737 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
