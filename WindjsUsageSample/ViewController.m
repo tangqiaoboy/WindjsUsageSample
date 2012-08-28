@@ -47,6 +47,7 @@
         alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
         alertView.delegate = self;
         [alertView show];
+        CFRunLoopRun();
         return NO;
     }
     return YES;
@@ -57,9 +58,13 @@
     debugMethod();
     if (buttonIndex == 1) {
         NSString * name = [alertView textFieldAtIndex:0].text;
-        NSString * js = [NSString stringWithFormat:@" $('#message').text('hello %@'); ", name];
+        NSString * js = [NSString stringWithFormat:@" result = '%@' ", name];
+        [_webView stringByEvaluatingJavaScriptFromString:js];
+    } else {
+        NSString * js = [NSString stringWithFormat:@" result = 'canceled' "];
         [_webView stringByEvaluatingJavaScriptFromString:js];
     }
+    CFRunLoopStop(CFRunLoopGetCurrent());
 }
 
 
